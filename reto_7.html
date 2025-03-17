@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Imagen Interactivo</title>
+    <link rel="stylesheet" href="css/reto_7.css">
+    <link rel="icon" href="img/LogoCenfotec.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <header>
+            <h1>Mapa Interativo</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Mapa de Imagen Interactivo</h2>
+            <img src="img/mapa.jpg" alt="Mapa Interactivo" usemap="#mapaInteractivo"
+                style="max-width: 100%; height: auto;">
+            <map name="mapaInteractivo">
+                <area shape="circle" coords="130,70,30" alt="Moto Deportiva" href="#"
+                    data-descripcion="Esta es una moto deportiva.">
+                <area shape="circle" coords="310,70,30" alt="Tablero" href="#"
+                    data-descripcion="Este es el tablero de la moto.">
+                <area shape="circle" coords="139,205,30" alt="Chaqueta" href="#"
+                    data-descripcion="Esta es una chaqueta de protección.">
+                <area shape="circle" coords="200,330,30" alt="Guantes" href="#"
+                    data-descripcion="Estos son guantes de protección.">
+                <area shape="circle" coords="330,206,30" alt="Casco" href="#"
+                    data-descripcion="Este es un casco de protección.">
+            </map>
+        </main>
+        <footer>
+            <p>&copy; 2025 - Minisitio Tarea 3</p>
+        </footer>
+    </div>
+    <script src="js/reto_7.js"></script>
+</body>
+
+</html>

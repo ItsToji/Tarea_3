@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Notas</title>
+    <link rel="stylesheet" href="css/reto_8.css">
+    <link rel="icon" href="img/LogoCenfotec.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <header>
+            <h1>Retos Programados</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Registro de Notas</h2>
+            <form id="registroForm">
+                <label for="nombre">Nombre del estudiante:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="apellidos">Apellidos del estudiante:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+                <label for="nota1">Nota 1:</label>
+                <input type="number" id="nota1" name="nota1" required>
+                <label for="nota2">Nota 2:</label>
+                <input type="number" id="nota2" name="nota2" required>
+                <label for="nota3">Nota 3:</label>
+                <input type="number" id="nota3" name="nota3" required>
+                <button type="submit">Agregar</button>
+            </form>
+            <h2>Consultar Estudiantes</h2>
+            <select id="estudiantesSelect">
+                <option value="">Seleccione un estudiante</option>
+            </select>
+            <button id="calcularPromedioBtn">Calcular Promedio</button>
+            <button id="limpiarRegistrosBtn">Limpiar Registros</button>
+            <div id="resultado"></div>
+        </main>
+        <footer>
+            <p>&copy; 2025 - Minisitio Tarea 3</p>
+        </footer>
+    </div>
+    <script src="js/reto_8.js"></script>
+</body>
+
+</html>

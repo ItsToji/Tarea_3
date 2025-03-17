@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversión de Monedas</title>
+    <link rel="stylesheet" href="css/reto_2.css">
+    <link rel="icon" href="img/LogoCenfotec.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <header>
+            <h1>Conversión de Moneda</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="formContainer">
+                <form id="conversionForm">
+                    <label>Monto: <input type="number" id="monto" required></label>
+                    <label>Tipo de cambio: <input type="number" id="tipoCambio" required></label>
+                    <label>Tipo de Conversión<select id="conversionTipo">
+                            <option value="dolar">Dólares a Colones</option>
+                            <option value="colon">Colones a Dólares</option>
+                        </select></label>
+                    <button type="submit">Convertir</button>
+                </form>
+                <div id="resultado"></div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2025 - Minisitio Tarea 3</p>
+        </footer>
+    </div>
+    <script src="js/reto_2.js"></script>
+</body>
+
+</html>

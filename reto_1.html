@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura Digital</title>
+    <link rel="stylesheet" href="css/reto_1.css">
+    <link rel="icon" href="img/LogoCenfotec.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <header>
+            <h1>Factura</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="formContainer">
+                <form id="facturaForm">
+                    <label>Nombre del Cliente: <input type="text" id="cliente" required></label>
+                    <label>Artículo: <input type="text" id="articulo" required></label>
+                    <label>Cantidad: <input type="number" id="cantidad" required></label>
+                    <label>Precio: <input type="number" id="precio" required></label>
+                    <button type="submit">Calcular</button>
+                </form>
+                <div id="resultado"></div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2025 - Minisitio Tarea 3</p>
+        </footer>
+    </div>
+    <script src="js/reto_1.js"></script>
+</body>
+
+</html>

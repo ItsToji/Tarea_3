@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Créditos</title>
+    <link rel="stylesheet" href="css/reto_5.css">
+    <link rel="icon" href="img/LogoCenfotec.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <header>
+            <h1>Calculadora de Créditos</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Simulador de créditos</h2>
+            <div class="selectContainerMain">
+                <div class="selectContainer">
+                    <label for="modeloSelect">Modelo:</label>
+                    <select id="modeloSelect">
+                        <option value="">--Seleccionar Modelo--</option>
+                        <option value="mt">MT</option>
+                        <option value="yzf">YZF</option>
+                    </select>
+                </div>
+                <div class="selectContainer">
+                    <label for="versionSelect">Versión:</label>
+                    <select id="versionSelect">
+                        <option value="">--Seleccionar Versión--</option>
+                    </select>
+                </div>
+                <div class="selectContainer">
+                    <label for="plazoSelect">Plazo:</label>
+                    <select id="plazoSelect">
+                        <option value="">--Seleccionar Plazo--</option>
+                        <option value="1">1 año</option>
+                        <option value="2">2 años</option>
+                        <option value="3">3 años</option>
+                    </select>
+                </div>
+                <div class="selectContainer">
+                    <label for="primaInput">Prima:</label>
+                    <input type="number" id="primaInput" placeholder="Ingrese la prima">
+                </div>
+            </div>
+            <div class="buttonContainer">
+                <button id="calcularBtn">Calcular</button>
+            </div>
+            <div class="infoContainer">
+                <img id="imagenMoto" src="" alt="Imagen de la moto seleccionada" style="display:none;">
+                <div id="resultado"></div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2025 - Minisitio Tarea 3</p>
+        </footer>
+    </div>
+    <script src="js/reto_5.js"></script>
+</body>
+
+</html>

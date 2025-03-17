@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugares de Europa</title>
+    <link rel="stylesheet" href="css/reto_4.css">
+    <link rel="icon" href="img/LogoCenfotec.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <header>
+            <h1>Observador de Lugares Europeos</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Observar lugares de Europa</h2>
+            <label for="lugarSelect">Selecciona un lugar:</label>
+            <select id="lugarSelect">
+                <option value="">Selecciona una opción</option>
+                <option value="suiza">Suiza</option>
+                <option value="francia">Francia</option>
+                <option value="italia">Italia</option>
+                <option value="alemania">Alemania</option>
+                <option value="españa">España</option>
+            </select>
+            <div id="descripcion"></div>
+            <img id="imagenLugar" src="" alt="Imagen del lugar seleccionado" style="display:none;">
+        </main>
+        <footer>
+            <p>&copy; 2025 - Minisitio Tarea 3</p>
+        </footer>
+    </div>
+    <script src="js/reto_4.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Color de Carro</title>
+    <link rel="stylesheet" href="css/reto_6.css">
+    <link rel="icon" href="img/LogoCenfotec.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <header>
+            <h1>Selector de Color de Auto</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Selecciona un color para el KIA PICANTO</h2>
+            <div class="color-selector">
+                <div class="colorContainer">
+                    <input type="radio" id="colorBlanco" name="color" value="blanco" checked>
+                    <label for="colorBlanco"></label>
+                </div>
+
+                <div class="colorContainer">
+                    <input type="radio" id="colorNegro" name="color" value="negro">
+                    <label for="colorNegro"></label>
+                </div>
+
+                <div class="colorContainer">
+                    <input type="radio" id="colorRojo" name="color" value="rojo">
+                    <label for="colorRojo"></label>
+                </div>
+
+                <div class="colorContainer">
+                    <input type="radio" id="colorAzul" name="color" value="azul">
+                    <label for="colorAzul"></label>
+                </div>
+
+                <div class="colorContainer">
+                    <input type="radio" id="colorVerde" name="color" value="verde">
+                    <label for="colorVerde"></label>
+                </div>
+            </div>
+            <img id="imagenCarro" src="img/carro_blanco.png" alt="Imagen del carro"
+                style="max-width: 100%; height: auto;">
+        </main>
+        <footer>
+            <p>&copy; 2025 - Minisitio Tarea 3</p>
+        </footer>
+    </div>
+    <script src="js/reto_6.js"></script>
+</body>
+
+</html>

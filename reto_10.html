@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Empleados</title>
+    <link rel="stylesheet" href="css/reto_10.css">
+    <link rel="icon" href="img/LogoCenfotec.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+    <div class="mainContainer">
+        <header>
+            <h1>Buscador de Empleados</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>  
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Ingrese la cédula del empleado:</h2>
+            <form id="buscadorForm">
+                <input type="text" id="cedula" name="cedula" required>
+                <br>
+                <button type="submit">Buscar</button>
+            </form>
+            <div id="resultado"></div>
+        </main>
+        <footer>
+            <p>&copy; 2025 - Minisitio Tarea 3</p>
+        </footer>
+    </div>
+    <script src="js/reto_10.js"></script>
+</body>
+
+</html>
